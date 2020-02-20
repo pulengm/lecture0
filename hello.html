@@ -2,6 +2,7 @@
 <html>
     <head>
        <title>My Webpage!</title>
+       <link rel="stylesheet" href="inheritance.css">
           <style> 
               div {
                   font-family: Arial, sans-serif;
@@ -28,6 +29,33 @@
                  text-align: center;
              }
           </style>
+          <style>
+              input[type=text] {
+                  background-color: red;
+              }
+              input[type=number] {
+                  background-color: yellow;
+              }
+          </style>
+          <style>
+              .success, .warning, .error { 
+                  font-family: sans-serif;
+                  font-size: 18px;
+                  font-weight: bold;
+                  border: 1px solid black;
+                  padding: 20px;
+                  margin: 20px; }
+
+              .success {
+                  background-color: green;  }
+
+              .warning {
+                  background-color: orange;  }
+
+              .error {
+                  background-color: red;  }
+          </style>
+          
         
     </head>
     <body>
@@ -86,8 +114,73 @@
                 <button>Submit!</button>
             </form>
 
+            <form>
+                <div>
+                    <input name="name" type="text" placeholder="Name">
+                    <input name="password" type="password" placeholder="Password">  
+                </div>
+
+                <div>
+                    Favorite color?
+                    <input name="color" type="radio" value="red"> Red
+                    <input name="color" type="radio" value="green"> Green
+                    <input name="color" type="radio" value="blue"> Blue
+                    <input name="color" type="radio" value="other"> Other
+                </div>
+
+                <div>
+                    <input name="country' list="Countries" placeholder="Counrty">
+                    <datalist id="countries">
+                        <option value="Afghanistan">
+                        <option value="Albania">
+                        <option value="Algeria">
+                        <option value="Andorra">
+                        <option value="Angola">
+                        <option value="Antigua &amp; Deps">
+                        <option value="Argentina">
+                        <option value="Armeniall">
+                        <option value="Australia">
+                        <option value="Austria">
+                        <option value="Azerbaijan">
+                        <option value="Bahamas">
+                        <option value="Bahrain">
+                        <option value="Bangladesh">
+                        <option value="Barbados">
+                        <option value="Belarus">
+                        <option value="Belgium">
+                        <option value="Botswana">
+                        <option value="Brazil">
+                        <option value="Berlin">
+                        <option value="Brunei">
+                        <option value="Bolivia">
+                        <option value="Bosnia Herzegovina">
+                        <option value="Benin">
+                        <option value="Crotia">
+                        <option value="Canada">
+                        <option value="England">
+                        <option value="France">
+                        <option value="Germany">
+                        <option value="Italy">
+                        <option value="Iraq">
+                        <option value="Portugal">
+                        <option value="South Africa">
+                        <option value="United States">
+                        <option value="United Kingdom">
+                        <option value="Zimbabwe">
+                        <option value="Mozambique">
+                        <option value="Zambia">
+                    </option>
+                              
+                </div>
+            </form>
+            <form>
+                <input name="name" type="text" placeholder="First Name">
+                <input name="name" type="text" placeholder="Last Name">
+                <input name="name" type="number" placeholder="Age">
+            </form>
 
             <a href="https://google.com">Click here</a>
+
 
             <h2>Table of Contents</h2>
             <ul>
@@ -116,13 +209,8 @@
                     color: blue;
                     text-align: center;
                 }
-                div {
-                    background-color: teal;
-                    width: 500px;
-                    height: 400px;
-                    margin: 30px;
-                    padding: 20px;
-                }
+                
+            
                
             </style>
 
@@ -138,6 +226,12 @@
 
 
         <img src="C:\Users\Mr Mojapelo\Pictures\Camera Roll\WIN_20180528_16_46_24_Pro.jpg" height="200" width="300"/>
+
+
+        <div class="success">This is a success message.</div>
+        <div class="warning">This is a warning message.</div>
+        <div class="error">This is an error message.</div>
+
 
     </body>
 </html>
